@@ -1,5 +1,9 @@
 package com.ada.apirest.repositories;
 
-public class PersonaRepository {
-    
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.ada.apirest.entities.Persona;
+
+public interface PersonaRepository extends JpaRepository<Persona,Integer> {
+
 }
